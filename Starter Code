@@ -5,8 +5,7 @@
 
 int main()
 {
-// add the srand part here...
-
+srand(time(0));
     // variable declarations
     int userResponse; 
     
@@ -22,7 +21,7 @@ int main()
      }
     if (userResponse == 1) 
     {
-        std::cout << "Hope you feel better tomorrow... \n"; 
+        std::cout << "I believe in you... \n"; 
     } 
     
     
@@ -59,6 +58,10 @@ int main()
     else if (randNum == 50 ) //only if the randomization is exactly 50.
     {
         std::cout << "Hope you make tomorrow even better";
+    }
+    else if ( randNum != 82)
+    {
+        std::cout << "You are amazing!";
     }
     else if (randNum < 50 ) 
     {

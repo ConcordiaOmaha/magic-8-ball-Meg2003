@@ -14,22 +14,57 @@ int main()
     std::cin >> userResponse;
     
     //based on the input reply to the user. 
+    if(userResponse > 10)
+     {
+        std::cout << "error!\n";
+     }
     if (userResponse == 1) 
     {
-        std::cout << "We hope you feel better tomorrow... "; 
-    } else
+        std::cout << "Hope you feel better tomorrow... \n"; 
+    } 
+    
+    
+    else if (userResponse == 2)
     {
-        std::cout << "It could be worse... "; 
+        std::cout << "It could be worse... \n"; 
     }
-
+    
+    else if (userResponse == 3)
+     {  
+        std::cout << "Has been better... \n";
+    }
+    else if (userResponse == 10)
+    {    
+        std::cout << "You are thriving... \n";
+    }
+    else if (userResponse == 9)
+     {
+        std::cout << "Glad to hear it... \n";
+    }
+    
+    else 
+    {
+    std::cout << "Better luck tomorrow... \n";
+    }
+    
     //create a secondary reply that is completely random. 
     int randNum = rand() % 100;         // adding %100 keeps the random number between 0 and 99. 
     
-    if (randNum > 60)
+    if (randNum  > 50 )
     {
-        std::cout << "better luck next time"; 
-    } else 
+        std::cout << "You must be doing something right!"; 
+    } 
+    else if (randNum == 50 ) //only if the randomization is exactly 50.
     {
-        std::cout << "Life must pretty good for you.";
+        std::cout << "Hope you make tomorrow even better";
     }
+    else if (randNum < 50 ) 
+    {
+        std::cout << "You are on the right path";
+    }
+    else
+    {
+        std::cout << "You got this!";
+    }
+
 }

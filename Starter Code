@@ -5,6 +5,8 @@
 
 int main()
 {
+// add the srand part here...
+
     // variable declarations
     int userResponse; 
     
